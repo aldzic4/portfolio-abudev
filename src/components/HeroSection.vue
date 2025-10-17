@@ -9,19 +9,21 @@
           {{ $t('aboutMe') }}
         </p>
 
-        <div class="flex flex-col sm:flex sm:flex-row space-x-0 sm:space-x-12 space-y-4 items-center mx-auto">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-left space-y-4 sm:space-y-0 sm:space-x-12 mx-auto mt-8">
           <!-- Contact Me Button -->
           <a href="#contact"
-            class="px-10 py-1.5 rounded-lg bg-green-700 text-white font-normal text-md hover:bg-green-800 border-1 border-green-800 transition duration-300">
+            class="px-10 py-2 rounded-lg bg-green-700 text-white font-medium text-md hover:bg-green-800 border border-green-800 transition duration-300">
             {{ $t('contactMe') }}
           </a>
 
           <!-- Download Resume Button -->
           <a href="/src/assets/pdf/abdullah-aldzic-cv.pdf" download
-            class="px-10 py-1.5 rounded-lg bg-white text-black hover:bg-gray-200 border-1 border-black transition duration-300">
+            class="px-10 py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 border border-black transition duration-300">
             {{ $t('downloadResume') }}
           </a>
         </div>
+
       </div>
 
       <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center md:justify-end animate-fade-slide-right">

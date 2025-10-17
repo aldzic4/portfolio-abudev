@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-2;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply my-4;
+}
+
+.dark {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.uniquefont {
+  font-family: 'Lora';
+}
+
+.italiana {
+  font-family: 'Italiana';
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px; /* visina tvog navbara */
+}

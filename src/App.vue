@@ -1,11 +1,21 @@
-<script setup></script>
+<script setup>
+import BackgroundSection from './components/BackgroundSection.vue'
+import ContactSection from './components/ContactSection.vue'
+import HeroSection from './components/HeroSection.vue'
+import MainFooter from './components/MainFooter.vue'
+import Navbar from './components/MainNavbar.vue'
+import SkillsSection from './components/SkillsSection.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <Navbar />
+  <div class="">
+    <HeroSection />
+    <BackgroundSection />
+    <SkillsSection />
+    <ContactSection />
+    <MainFooter />
+  </div>
 </template>
 
 <style scoped></style>

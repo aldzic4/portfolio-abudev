@@ -18,7 +18,7 @@
           </a>
 
           <!-- Download Resume Button -->
-          <a href="/src/assets/pdf/abdullah-aldzic-cv.pdf" download
+          <a href="/pdf/abdullah-aldzic-cv.pdf" download
             class="px-10 py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 border border-black transition duration-300">
             {{ $t('downloadResume') }}
           </a>

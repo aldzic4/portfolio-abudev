@@ -12,7 +12,7 @@ app.use(i18n)
 app.mount('#app')
 
 app.config.globalProperties.$theme = reactive({
-  darkMode: localStorage.getItem('darkMode') === 'true'
+  darkMode: localStorage.getItem('darkMode') === 'true',
 })
 
 // inicijalna primjena teme

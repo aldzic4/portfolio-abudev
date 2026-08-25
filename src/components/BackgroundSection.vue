@@ -2,15 +2,21 @@
   <div id="background" class="bg-[#f8f9fa] dark:bg-gray-900">
     <div class="container">
       <div class="text-center pt-8 pb-2">
-        <span class="font-medium text-5xl text-center italiana">{{ $t('background') + '.' }}</span>
+        <h2 class="font-medium text-5xl text-center italiana">{{ $t('background') + '.' }}</h2>
       </div>
       <hr class="w-1/2 mx-auto" />
       <div class="flex flex-col sm:flex sm:flex-row space-x-24">
-        <div class="opacity-0 translate-y-10 transition-all duration-700 ease-out" v-intersect="onIntersect">
+        <div
+          class="opacity-0 translate-y-10 transition-all duration-700 ease-out"
+          v-intersect="onIntersect"
+        >
           <Timeline :data="educationData" :title="$t('education')" />
         </div>
-        <div class="opacity-0 translate-y-10 transition-all duration-700 ease-out" v-intersect="onIntersect"
-          style="transition-delay: 200ms">
+        <div
+          class="opacity-0 translate-y-10 transition-all duration-700 ease-out"
+          v-intersect="onIntersect"
+          style="transition-delay: 200ms"
+        >
           <Timeline :data="experienceData" :title="$t('workExperience')" />
         </div>
       </div>

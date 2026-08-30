@@ -74,7 +74,7 @@ const faqLists = {
     },
     {
       q: 'How can I get in touch?',
-      a: 'The fastest way is through the contact form below, or by emailing me directly at abdullahaldzic4@gmail.com.',
+      a: 'The fastest way is through the contact form below, or by emailing me directly at info@abudev.app.',
     },
   ],
   bs: [
@@ -100,7 +100,7 @@ const faqLists = {
     },
     {
       q: 'Kako mogu stupiti u kontakt?',
-      a: 'Najbrže preko kontakt forme ispod, ili direktno na email abdullahaldzic4@gmail.com.',
+      a: 'Najbrže preko kontakt forme ispod, ili direktno na email info@abudev.app.',
     },
   ],
   de: [
@@ -126,7 +126,7 @@ const faqLists = {
     },
     {
       q: 'Wie kann ich dich kontaktieren?',
-      a: 'Am schnellsten über das Kontaktformular unten oder direkt per E-Mail an abdullahaldzic4@gmail.com.',
+      a: 'Am schnellsten über das Kontaktformular unten oder direkt per E-Mail an info@abudev.app.',
     },
   ],
 }

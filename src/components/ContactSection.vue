@@ -26,7 +26,7 @@
             <div class="flex items-center">
               <EnvelopeIcon class="w-8 h-8 text-green-700 mr-2" />
               <span class="font-medium pr-2 text-lg">Email:</span>
-              <span class="font-bold text-lg">abdullahaldzic4@gmail.com</span>
+              <span class="font-bold text-lg">info@abudev.app</span>
             </div>
 
             <div class="flex items-center">

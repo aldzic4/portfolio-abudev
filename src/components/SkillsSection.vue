@@ -2,14 +2,18 @@
   <div id="skills" class="bg-white dark:bg-gray-900 mb-12">
     <div class="container pt-8">
       <div class="text-center pb-2">
-        <span class="font-medium text-5xl text-center italiana">{{ $t('skills') + '.' }}</span>
+        <h2 class="font-medium text-5xl text-center italiana">{{ $t('skills') + '.' }}</h2>
       </div>
       <hr class="w-1/2 mx-auto" />
       <br />
       <div class="grid grid-cols-2 md:grid-cols-3 items-center text-center mt-4 space-y-12">
-        <div v-for="(skill, index) in skillsData"
-          class="uniquefont opacity-0 translate-y-10 transition-all duration-700 ease-out" v-intersect="onIntersect"
-          :style="{ transitionDelay: index * 150 + 'ms' }" :key="skill.title">
+        <div
+          v-for="(skill, index) in skillsData"
+          class="uniquefont opacity-0 translate-y-10 transition-all duration-700 ease-out"
+          v-intersect="onIntersect"
+          :style="{ transitionDelay: index * 150 + 'ms' }"
+          :key="skill.title"
+        >
           <div class="">
             <component :is="skill.icon" class="w-12 h-12 text-green-700 text-center mx-auto" />
           </div>

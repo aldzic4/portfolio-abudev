@@ -44,3 +44,12 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 64px; /* visina tvog navbara */
 }
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

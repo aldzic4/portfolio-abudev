@@ -4,7 +4,7 @@
       class="container flex flex-col items-center justify-between p-3 mx-auto space-y-4 sm:space-y-0 sm:flex-row"
     >
       <a href="#home">
-        <img class="w-auto h-18" :src="logo" />
+        <img class="w-auto h-18" :src="logo" alt="AbuDev logo" />
       </a>
 
       <p class="text-sm text-gray-800 dark:text-gray-300">
@@ -34,7 +34,7 @@
         </a>
 
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/aldzic4"
           target="_blank"
           class="text-gray-600 dark:text-gray-400 hover:text-green-600 transition-all duration-300 hover:scale-110"
         >

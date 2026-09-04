@@ -88,6 +88,9 @@
           ></div>
           <img
             :src="heroIllustration"
+            width="1100"
+            height="734"
+            fetchpriority="high"
             alt="Abdullah Aldžić — Fullstack Laravel & VueJS Developer, working from Graz, Austria"
             class="hero-illustration relative w-full max-w-lg transform transition duration-700 hover:scale-[1.02]"
           />
@@ -97,7 +100,7 @@
 
     <a
       href="#background"
-      class="hidden md:flex flex-col items-center gap-1 absolute bottom-4 left-1/2 -translate-x-1/2 text-gray-400 dark:text-gray-500 hover:text-green-700 dark:hover:text-green-500 transition-colors duration-300 animate-bounce-slow"
+      class="hidden md:flex flex-col items-center gap-1 absolute bottom-4 left-1/2 -translate-x-1/2 text-gray-500 dark:text-gray-400 hover:text-green-700 dark:hover:text-green-500 transition-colors duration-300 animate-bounce-slow"
     >
       <span class="text-xs uppercase tracking-widest">{{ $t('scrollDown') }}</span>
       <ChevronDownIcon class="w-5 h-5" />
@@ -106,7 +109,7 @@
 </template>
 
 <script setup>
-import heroIllustration from '../assets/images/hero-ilustration.jpg'
+import heroIllustration from '../assets/images/hero-illustration.webp'
 import { ChevronDownIcon } from '@heroicons/vue/24/outline'
 
 const techStack = ['Laravel', 'Vue.js', 'Tailwind CSS', 'MySQL', 'REST API']

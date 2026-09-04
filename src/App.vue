@@ -13,7 +13,7 @@ import StatsSection from './components/StatsSection.vue'
 
 <template>
   <Navbar />
-  <div class="">
+  <main>
     <HeroSection />
     <StatsSection />
     <BackgroundSection />
@@ -22,8 +22,8 @@ import StatsSection from './components/StatsSection.vue'
     <ProjectsSection />
     <FaqSection />
     <ContactSection />
-    <MainFooter />
-  </div>
+  </main>
+  <MainFooter />
 </template>
 
 <style scoped></style>

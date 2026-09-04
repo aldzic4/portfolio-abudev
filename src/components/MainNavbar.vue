@@ -5,7 +5,7 @@
     <div class="container mx-auto py-2 md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
         <a href="#home">
-          <img class="w-auto h-12 sm:h-16" :src="logo" alt="AbuDev logo" />
+          <img class="w-auto h-12 sm:h-16" :src="logo" width="526" height="302" alt="AbuDev logo" />
         </a>
 
         <div class="flex lg:hidden">
@@ -13,8 +13,8 @@
             x-cloak
             @click="toggleMenu"
             type="button"
-            class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
-            aria-label="toggle menu"
+            class="text-gray-600 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 focus:outline-none focus:text-gray-700 dark:focus:text-gray-400"
+            aria-label="Toggle menu"
           >
             <svg
               v-if="!isOpen"
@@ -86,6 +86,7 @@
         <div class="flex justify-center mt-2 md:block">
           <button
             @click="switchMode"
+            :aria-label="isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'"
             class="ml-2 text-gray-700 dark:text-gray-200 cursor-pointer items-center"
           >
             <MoonIcon v-if="isDarkMode" class="w-6 h-6" />
@@ -97,7 +98,11 @@
             @click="langIsOpen = !langIsOpen"
             class="ml-6 mt-1 bg-transparent border inline-flex border-gray-300 dark:border-gray-600 rounded-md px-2 py-1 text-gray-700 dark:text-gray-200 cursor-pointer"
           >
-            <img :src="currentLanguage.flag" class="w-6 h-5 mr-2 pt-1" />
+            <img
+              :src="currentLanguage.flag"
+              :alt="currentLanguage.label + ' flag'"
+              class="w-6 h-5 mr-2 pt-1"
+            />
             <span>{{ currentLanguage.label }}</span>
             <!-- <svg class="w-4 h-4 ms-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -120,7 +125,7 @@
                   @click.prevent="changeLanguage(lang.code)"
                   class="cursor-pointer flex space-x-8 w-full items-center px-3 py-2 text-sm text-left hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-md"
                 >
-                  <img :src="lang.flag" class="w-6 h-5 mr-2" />
+                  <img :src="lang.flag" :alt="lang.label + ' flag'" class="w-6 h-5 mr-2" />
                   <span>{{ lang.label }}</span>
                 </button>
               </li>

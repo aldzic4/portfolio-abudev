@@ -8,10 +8,10 @@
           >
             {{ stat.display }}{{ stat.suffix }}
           </p>
-          <p class="mt-2 text-sm md:text-base text-gray-500 dark:text-gray-400">{{ stat.label }}</p>
+          <p class="mt-2 text-sm md:text-base text-gray-600 dark:text-gray-400">{{ stat.label }}</p>
         </div>
       </div>
-      <p class="mt-6 text-center text-xs text-gray-400 dark:text-gray-500">
+      <p class="mt-6 text-center text-xs text-gray-600 dark:text-gray-400">
         {{ $t('statsProjectsNote') }}
       </p>
     </div>

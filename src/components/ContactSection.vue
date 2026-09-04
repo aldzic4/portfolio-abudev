@@ -40,6 +40,7 @@
           <div class="flex space-x-4 pt-4">
             <a
               href="https://www.facebook.com/abdullah.aldzic/"
+              aria-label="Facebook"
               target="_blank"
               class="text-gray-600 dark:text-gray-400 hover:text-green-600 transition-all duration-300 hover:scale-110"
             >
@@ -61,6 +62,7 @@
 
             <a
               href="https://github.com/aldzic4"
+              aria-label="GitHub"
               target="_blank"
               class="text-gray-600 dark:text-gray-400 hover:text-green-600 transition-all duration-300 hover:scale-110"
             >
@@ -92,6 +94,7 @@
 
             <a
               href="https://linkedin.com/in/abdullah-aldzic"
+              aria-label="LinkedIn"
               target="_blank"
               class="text-gray-600 dark:text-gray-400 hover:text-green-600 transition-all duration-300 hover:scale-110"
             >
@@ -135,8 +138,11 @@
             class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8 space-y-6"
           >
             <div>
-              <label class="block text-sm font-medium mb-2">{{ $t('formName') }}</label>
+              <label for="contact-name" class="block text-sm font-medium mb-2">{{
+                $t('formName')
+              }}</label>
               <input
+                id="contact-name"
                 v-model="form.name"
                 type="text"
                 name="name"
@@ -147,8 +153,9 @@
             </div>
 
             <div>
-              <label class="block text-sm font-medium mb-2">Email</label>
+              <label for="contact-email" class="block text-sm font-medium mb-2">Email</label>
               <input
+                id="contact-email"
                 v-model="form.email"
                 type="email"
                 name="email"
@@ -159,8 +166,11 @@
             </div>
 
             <div>
-              <label class="block text-sm font-medium mb-2">{{ $t('formMessage') }}</label>
+              <label for="contact-message" class="block text-sm font-medium mb-2">{{
+                $t('formMessage')
+              }}</label>
               <textarea
+                id="contact-message"
                 v-model="form.message"
                 name="message"
                 rows="5"

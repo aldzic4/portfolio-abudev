@@ -4,7 +4,7 @@
       class="container flex flex-col items-center justify-between p-3 mx-auto space-y-4 sm:space-y-0 sm:flex-row"
     >
       <a href="#home">
-        <img class="w-auto h-18" :src="logo" alt="AbuDev logo" />
+        <img class="w-auto h-18" :src="logo" width="526" height="302" alt="AbuDev logo" />
       </a>
 
       <p class="text-sm text-gray-800 dark:text-gray-300">
@@ -14,6 +14,7 @@
       <div class="flex space-x-4 pt-4">
         <a
           href="https://www.facebook.com/abdullah.aldzic/"
+          aria-label="Facebook"
           target="_blank"
           class="text-gray-600 dark:text-gray-400 hover:text-green-600 transition-all duration-300 hover:scale-110"
         >
@@ -35,6 +36,7 @@
 
         <a
           href="https://github.com/aldzic4"
+          aria-label="GitHub"
           target="_blank"
           class="text-gray-600 dark:text-gray-400 hover:text-green-600 transition-all duration-300 hover:scale-110"
         >
@@ -66,6 +68,7 @@
 
         <a
           href="https://linkedin.com/in/abdullah-aldzic"
+          aria-label="LinkedIn"
           target="_blank"
           class="text-gray-600 dark:text-gray-400 hover:text-green-600 transition-all duration-300 hover:scale-110"
         >

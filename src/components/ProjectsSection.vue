@@ -121,12 +121,12 @@
               </a>
               <div
                 v-else-if="project.status === 'internal'"
-                class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400"
+                class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400"
               >
                 <LockClosedIcon class="w-4 h-4" />
                 {{ $t('privateNote') }}
               </div>
-              <div v-else class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+              <div v-else class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                 <WrenchScrewdriverIcon class="w-4 h-4" />
                 {{ $t('comingSoonNote') }}
               </div>
@@ -149,17 +149,17 @@ import {
   WrenchScrewdriverIcon,
 } from '@heroicons/vue/24/outline'
 
-import loptyLanding from '../assets/images/projects/lopty-landing.png'
-import loptyTable from '../assets/images/projects/lopty-table.png'
-import loptyProfile from '../assets/images/projects/lopty-profile.png'
-import caarplansLogin from '../assets/images/projects/caarplans-login.png'
-import caarplansNav from '../assets/images/projects/caarplans-nav.png'
-import shiftplaneroSchedule from '../assets/images/projects/shift-planero-3.png'
-import shiftplaneroDashboard from '../assets/images/projects/shift-planero-1.png'
-import shiftplaneroTemplates from '../assets/images/projects/shift-planero-2.png'
-import nabavkoLanding from '../assets/images/projects/nabavko2.jpg'
-import nabavkoSteps from '../assets/images/projects/nabavko1.png'
-import nabavkoCoverage from '../assets/images/projects/nabavko3.png'
+import loptyLanding from '../assets/images/projects/lopty-landing.webp'
+import loptyTable from '../assets/images/projects/lopty-table.webp'
+import loptyProfile from '../assets/images/projects/lopty-profile.webp'
+import caarplansLogin from '../assets/images/projects/caarplans-login.webp'
+import caarplansNav from '../assets/images/projects/caarplans-nav.webp'
+import shiftplaneroSchedule from '../assets/images/projects/shift-planero-3.webp'
+import shiftplaneroDashboard from '../assets/images/projects/shift-planero-1.webp'
+import shiftplaneroTemplates from '../assets/images/projects/shift-planero-2.webp'
+import nabavkoLanding from '../assets/images/projects/nabavko2.webp'
+import nabavkoSteps from '../assets/images/projects/nabavko1.webp'
+import nabavkoCoverage from '../assets/images/projects/nabavko3.webp'
 
 const { t } = useI18n()
 

@@ -149,6 +149,8 @@ import {
   WrenchScrewdriverIcon,
 } from '@heroicons/vue/24/outline'
 
+import umziLanding from '../assets/images/projects/umzi-1.webp'
+import umziSteps from '../assets/images/projects/umzi-2.webp'
 import loptyLanding from '../assets/images/projects/lopty-landing.webp'
 import loptyTable from '../assets/images/projects/lopty-table.webp'
 import loptyProfile from '../assets/images/projects/lopty-profile.webp'
@@ -182,6 +184,17 @@ const statusStyles = {
 }
 
 const projects = computed(() => [
+  {
+    name: 'Umzi',
+    status: 'live',
+    gradient: 'bg-gradient-to-br from-violet-500 via-purple-600 to-indigo-600',
+    mainImage: umziLanding,
+    mainImagePosition: 'object-top',
+    thumbs: [{ src: umziSteps, side: 'right', frame: 'w-32 sm:w-40 h-20 sm:h-24' }],
+    description: t('umziDescription'),
+    tech: ['Laravel', 'Filament', 'Nuxt', 'Vue.js', 'Tailwind CSS', 'MySQL'],
+    link: 'https://umzi.at',
+  },
   {
     name: 'Lopty',
     status: 'live',

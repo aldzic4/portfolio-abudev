@@ -48,6 +48,8 @@ const messages = {
     viewProject: 'Visit Website',
     privateNote: 'Private company project — not publicly accessible',
     comingSoonNote: 'Currently in development',
+    umziDescription:
+      'Umzi is a transport and moving marketplace connecting customers with moving companies in Graz and across Austria — covering requests, offers, matching, and reviews end-to-end.',
     loptyDescription:
       'A web application built with Laravel and Vue.js, focused on delivering a fast, modern, and user-friendly experience end-to-end.',
     caarplansDescription:
@@ -104,6 +106,8 @@ const messages = {
     viewProject: 'Posjeti sajt',
     privateNote: 'Privatni projekat firme — nije javno dostupan',
     comingSoonNote: 'Trenutno u izradi',
+    umziDescription:
+      'Umzi je marketplace za transport i selidbe koji povezuje klijente sa firmama za selidbe u Grazu i širom Austrije — od zahtjeva i ponuda do poklapanja i recenzija.',
     loptyDescription:
       'Web aplikacija razvijena u Laravelu i Vue.js-u, fokusirana na brzo, moderno i korisniku prilagođeno iskustvo.',
     caarplansDescription:
@@ -160,6 +164,8 @@ const messages = {
     viewProject: 'Website besuchen',
     privateNote: 'Privates Firmenprojekt — nicht öffentlich zugänglich',
     comingSoonNote: 'Derzeit in Entwicklung',
+    umziDescription:
+      'Umzi ist ein Transport- und Umzugsmarktplatz, der Kunden mit Umzugsunternehmen in Graz und ganz Österreich verbindet — von Anfragen und Angeboten bis zu Matching und Bewertungen.',
     loptyDescription:
       'Eine mit Laravel und Vue.js entwickelte Webanwendung mit Fokus auf ein schnelles, modernes und benutzerfreundliches Erlebnis.',
     caarplansDescription:

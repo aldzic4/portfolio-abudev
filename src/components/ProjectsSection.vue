@@ -1,11 +1,11 @@
 <template>
   <div id="projects" class="bg-white dark:bg-gray-900 mb-12">
     <div class="container pt-8">
-      <div class="text-center pb-2">
+      <div v-reveal class="text-center pb-2">
         <h2 class="font-medium text-5xl text-center italiana">{{ $t('projects') + '.' }}</h2>
       </div>
-      <hr class="w-1/2 mx-auto" />
-      <p class="text-center text-gray-600 dark:text-gray-300 text-lg mt-4">
+      <hr v-reveal class="w-1/2 mx-auto" />
+      <p v-reveal="150" class="text-center text-gray-600 dark:text-gray-300 text-lg mt-4">
         {{ $t('projectsSubtitle') }}
       </p>
 

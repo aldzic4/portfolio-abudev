@@ -1,11 +1,11 @@
 <template>
   <div id="services" class="bg-[#f8f9fa] dark:bg-gray-900">
     <div class="container pt-8 pb-16">
-      <div class="text-center pb-2">
+      <div v-reveal class="text-center pb-2">
         <h2 class="font-medium text-5xl text-center italiana">{{ $t('services') + '.' }}</h2>
       </div>
-      <hr class="w-1/2 mx-auto" />
-      <p class="text-center text-gray-600 dark:text-gray-300 text-lg mt-4">
+      <hr v-reveal class="w-1/2 mx-auto" />
+      <p v-reveal="150" class="text-center text-gray-600 dark:text-gray-300 text-lg mt-4">
         {{ $t('servicesSubtitle') }}
       </p>
 

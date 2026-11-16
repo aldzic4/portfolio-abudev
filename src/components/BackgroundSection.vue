@@ -1,10 +1,10 @@
 <template>
   <div id="background" class="bg-[#f8f9fa] dark:bg-gray-900">
     <div class="container">
-      <div class="text-center pt-8 pb-2">
+      <div v-reveal class="text-center pt-8 pb-2">
         <h2 class="font-medium text-5xl text-center italiana">{{ $t('background') + '.' }}</h2>
       </div>
-      <hr class="w-1/2 mx-auto" />
+      <hr v-reveal class="w-1/2 mx-auto" />
       <div class="flex flex-col sm:flex sm:flex-row space-x-24">
         <div
           class="opacity-0 translate-y-10 transition-all duration-700 ease-out"

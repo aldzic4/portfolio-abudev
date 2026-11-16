@@ -15,7 +15,7 @@
     />
     <meta name="author" content="Abu Dev" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#15803d" />
+    <meta name="theme-color" content="#111827" />
     <link rel="canonical" href="https://abudev.app/" />
 
     <!-- ✅ Open Graph (Facebook, LinkedIn, etc.) -->
@@ -146,6 +146,14 @@
             }
           }
         ]
+      }
+    </script>
+    <!-- Dark mode by default (runs before render to avoid a light flash) -->
+    <script>
+      try {
+        if (localStorage.getItem('darkMode') !== 'false') document.documentElement.classList.add('dark')
+      } catch (e) {
+        document.documentElement.classList.add('dark')
       }
     </script>
   </head>

@@ -4,7 +4,7 @@
       class="container flex flex-col items-center justify-between p-3 mx-auto space-y-4 sm:space-y-0 sm:flex-row"
     >
       <a href="#home">
-        <img class="w-auto h-18" :src="logo" width="526" height="302" alt="AbuDev logo" />
+        <img class="w-auto h-18 dark:invert dark:hue-rotate-180" :src="logo" width="526" height="302" alt="AbuDev logo" />
       </a>
 
       <p class="text-sm text-gray-800 dark:text-gray-300">

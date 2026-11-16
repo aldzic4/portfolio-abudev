@@ -16,8 +16,10 @@
       ></div>
     </div>
 
-    <div class="container mx-auto py-20 md:flex md:items-center md:justify-between uniquefont">
-      <div class="md:w-1/2 mx-16 animate-fade-slide-left">
+    <div
+      class="container mx-auto py-12 md:py-20 md:flex md:items-center md:justify-between uniquefont"
+    >
+      <div class="md:w-1/2 mx-3 sm:mx-8 md:mx-16 animate-fade-slide-left">
         <div
           class="inline-flex items-center gap-2 rounded-full border border-green-700/30 bg-green-50 dark:bg-green-900/20 px-4 py-1.5 mb-5 animate-fade-in"
         >
@@ -39,7 +41,7 @@
         </p>
 
         <h1
-          class="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-green-700 via-emerald-600 to-teal-600 dark:from-green-500 dark:via-emerald-400 dark:to-teal-400 bg-clip-text text-transparent"
+          class="hero-title text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-green-700 via-emerald-600 to-teal-600 dark:from-green-500 dark:via-emerald-400 dark:to-teal-400 bg-clip-text text-transparent"
         >
           {{ $t('whoIsAbu') }}
         </h1>
@@ -48,31 +50,34 @@
         </p>
 
         <div
-          class="flex flex-col sm:flex-row items-center justify-left space-y-4 sm:space-y-0 sm:space-x-12 mx-auto mt-8"
+          class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6 mt-8 animate-fade-in"
+          style="animation-delay: 0.25s"
         >
           <!-- Contact Me Button -->
           <a
             href="#contact"
-            class="px-10 py-2 rounded-lg bg-green-700 text-white font-medium text-md hover:bg-green-800 border border-green-800 transition duration-300 shadow-lg shadow-green-700/20 hover:-translate-y-0.5"
+            class="group relative overflow-hidden whitespace-nowrap text-center px-10 py-3 sm:py-2 rounded-lg bg-green-700 text-white font-medium text-md hover:bg-green-800 border border-green-800 transition duration-300 shadow-lg shadow-green-700/20 hover:-translate-y-0.5"
           >
-            {{ $t('contactMe') }}
+            <span class="relative z-10">{{ $t('contactMe') }}</span>
+            <span class="shine"></span>
           </a>
 
           <!-- Download Resume Button -->
           <a
             href="/pdf/abdullah-aldzic-cv.pdf"
             download
-            class="px-10 py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 border border-black transition duration-300 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 hover:-translate-y-0.5"
+            class="whitespace-nowrap text-center px-10 py-3 sm:py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 border border-black transition duration-300 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 hover:-translate-y-0.5"
           >
             {{ $t('downloadResume') }}
           </a>
         </div>
 
-        <div class="flex flex-wrap gap-2 mt-8 animate-fade-in" style="animation-delay: 0.4s">
+        <div class="flex flex-wrap gap-2 mt-8">
           <span
-            v-for="tech in techStack"
+            v-for="(tech, i) in techStack"
             :key="tech"
-            class="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-700 border border-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700 hover:border-green-600 hover:text-green-700 dark:hover:text-green-400 transition-colors duration-300"
+            :style="{ animationDelay: 0.5 + i * 0.08 + 's' }"
+            class="chip-pop px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-700 border border-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700 hover:border-green-600 hover:text-green-700 dark:hover:text-green-400 transition-colors duration-300"
           >
             {{ tech }}
           </span>
@@ -80,7 +85,7 @@
       </div>
 
       <div
-        class="md:w-1/2 mt-10 md:mt-0 flex justify-center md:justify-end animate-fade-slide-right"
+        class="md:w-1/2 mt-10 md:mt-0 px-3 sm:px-0 flex justify-center md:justify-end animate-fade-slide-right"
       >
         <div class="relative flex items-center justify-center">
           <div
@@ -92,7 +97,7 @@
             height="734"
             fetchpriority="high"
             alt="Abdullah Aldžić — Fullstack Laravel & VueJS Developer, working from Graz, Austria"
-            class="hero-illustration relative w-full max-w-lg transform transition duration-700 hover:scale-[1.02]"
+            class="hero-illustration animate-float relative w-full max-w-sm sm:max-w-md md:max-w-lg transform transition duration-700 hover:scale-[1.02]"
           />
         </div>
       </div>
@@ -221,6 +226,77 @@ const techStack = ['Laravel', 'Vue.js', 'Tailwind CSS', 'MySQL', 'REST API']
     animation: none;
     opacity: 1;
     transform: none;
+  }
+}
+
+.hero-title {
+  background-size: 200% auto;
+  animation: gradientShift 6s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+}
+
+.shine {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 70%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.7s ease;
+}
+
+.group:hover .shine {
+  transform: translateX(100%);
+}
+
+.chip-pop {
+  opacity: 0;
+  animation: chipPop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes chipPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-title,
+  .chip-pop,
+  .animate-float {
+    animation: none;
+    opacity: 1;
   }
 }
 </style>

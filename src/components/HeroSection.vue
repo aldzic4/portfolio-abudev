@@ -72,7 +72,7 @@
           </a>
         </div>
 
-        <div class="flex flex-wrap gap-2 mt-8">
+        <div class="hidden sm:flex flex-wrap gap-2 mt-8">
           <span
             v-for="(tech, i) in techStack"
             :key="tech"
